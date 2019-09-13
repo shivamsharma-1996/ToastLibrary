@@ -2,13 +2,17 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/toast_root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:padding="8dp">
 
     <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toast_message"
+        android:layout_alignBottom="@+id/toast_message"
+        android:layout_toLeftOf="@+id/toast_message"
+        android:layout_toRightOf="@+id/toast_message"/>
 
     <TextView
         android:id="@+id/toast_message"
@@ -17,7 +21,7 @@
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:padding="8dp"
-        android:background="@drawable/bg_semi_round"
+        android:background="@android:color/holo_blue_dark"
         android:text="@string/app_name"
         android:gravity="center"/>
 
